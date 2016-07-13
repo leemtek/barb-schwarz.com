@@ -1,4 +1,4 @@
-# Creator of Home Staging
+# Barb Schwarz's Website
 
 The author of this website is Barb Schwarz.
 
