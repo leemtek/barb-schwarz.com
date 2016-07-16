@@ -1,0 +1,32 @@
+{
+  "name": "barb-schwarz.com",
+  "homepage": "https://github.com/leemtek/barb-schwarz.com",
+  "authors": [
+    "Duane Leem <duaneleem@alumni.ggu.edu>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "Barb",
+    "Schwarz"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flexslider": "~2.6.0",
+    "lightbox2": "~2.8.2",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.6.3",
+    "waypoints": "~4.0.0",
+    "wow": "~1.1.2",
+    "jquery": "~2.1.4",
+    "masonry": "~3.3.2"
+  }
+}
