@@ -27,7 +27,7 @@ GOOGLE MAP
 			var map = new google.maps.Map(document.getElementById('google-map'), myOptions);
 
 			// Marker Image
-			var image = '/assets/template/images/marker.png';
+			var image = './assets/template/images/marker.png';
 
 		  	/* ========= First Marker ========= */
 
