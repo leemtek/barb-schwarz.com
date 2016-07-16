@@ -27,15 +27,15 @@ GOOGLE MAP
 			var map = new google.maps.Map(document.getElementById('google-map'), myOptions);
 
 			// Marker Image
-			var image = 'images/marker.png';
-			
+			var image = '/assets/template/images/marker.png';
+
 		  	/* ========= First Marker ========= */
 
 		  	// First Marker Coordination
-			
+
 			var myLatlng = new google.maps.LatLng(26.977530,75.692714);
 
-			// Your Texts 
+			// Your Texts
 
 			 var contentString = '<div id="content">'+
 			  '<div id="siteNotice">'+
@@ -51,7 +51,7 @@ GOOGLE MAP
 
 			  '</p>'+
 			  '</div>';
-			
+
 
 			var marker = new google.maps.Marker({
 				  position: myLatlng,
@@ -65,11 +65,11 @@ GOOGLE MAP
 			  content: contentString
 			  });
 
-			  
+
 			 google.maps.event.addListener(marker, 'click', function() {
 				infowindow.open(map,marker);
 			  });
 
 			 /* ========= End First Marker ========= */
-		
+
 		});
