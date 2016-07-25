@@ -79,5 +79,11 @@
 }
 
 
+/* ============================================================
+    Commonly Used
+============================================================ */
+.space-top-10 { margin-top: 10px; }
 .space-bottom-20 { margin-bottom: 20px; }
 .text-bold { font-weight: bold; }
+
+.margin-10px { margin: 10px; }
