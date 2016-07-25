@@ -40,6 +40,8 @@
         <![endif]-->
     </head>
     <body>
+        <!-- Google Analytics -->
+        <script src="assets/partials/google-analytics.js"></script>
 
         <!-- Facebook -->
         <script src="assets/partials/facebook.js"></script>
@@ -56,6 +58,9 @@
         <!-- About -->
         <section ng-include="'views/home-about.html'" id="about"></section>
 
+        <!-- Accomplishments -->
+        <section ng-include="'views/home-accomplishments.html'" id="accomplishments"></section>
+
         <!-- Contact Form -->
         <section ng-include="'views/home-contact.html'" id="contact"></section>
 
@@ -64,120 +69,16 @@
             Footer
         ========================================================================================== -->
         <div class="space-40"></div>
-        <footer class="footer-v3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 margin-b-30">
-                        <h3>Quick Links</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About  </a></li>
-                            <li><a href="#"> Press</a></li>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
+        <footer site-footer class="footer-v3"></footer>
 
-                    <div class="col-md-3 margin-b-30">
-                        <h3>Latest post</h3>
-                        <ul class="list-unstyled latest-post-footer">
-                            <li class="clearfix">
-                                <img src="assets/template/images/team-1.jpg" width="90" class="img-circle img-responsive media-object" alt="">
-                                <div class="post-body">
-                                    <h4 class="post-heading">
-                                        Versa multipurpose
-                                    </h4>
-                                    <span>Posted on 21 Dec.</span>
-                                    <a href="#">Read more <i class="fa fa-arrow-circle-o-right"></i></a>
-                                </div>
-                            </li>
-                            <li class="clearfix">
-                                <img src="assets/template/images/team-2.jpg" width="60" class="img-circle img-responsive media-object" alt="">
-                                <div class="post-body">
-                                    <h4 class="post-heading">
-                                        Complete set
-                                    </h4>
-                                    <span>Posted on 21 Dec.</span>
-                                    <a href="#">Read more <i class="fa fa-arrow-circle-o-right"></i></a>
-                                </div>
-                            </li>
-                            <li class="clearfix">
-                                <img src="assets/template/images/team-3.jpg" width="60" class="img-circle img-responsive media-object" alt="">
-                                <div class="post-body">
-                                    <h4 class="post-heading">
-                                        Fully responsive
-                                    </h4>
-                                    <span>Posted on 21 Dec.</span>
-                                    <a href="#">Read more <i class="fa fa-arrow-circle-o-right"></i></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 margin-b-30">
-                        <h3>Visit us</h3>
-                        <p>
-                            124, Lorem Street,  New York City, NY 10012, U.S.
-                        </p>
-                        <p>(888) 586-5960</p>
-
-                        <p><a href="#">info@versa.com</a></p>
-                        <div class="clearfix">
-                            <a class="social-icon social-dark social-sm  si-facebook" href="https://www.facebook.com/barbstagedhomes" target="_blank" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-                            <a class="social-icon social-dark social-sm si-twitter" href="javascript:void(0)" data-toggle="tooltip" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-                            <a class="social-icon social-dark social-sm si-linkedin" href="javascript:void(0)" data-toggle="tooltip" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                            <a class="social-icon social-dark social-sm si-g-plus" href="javascript:void(0)" data-toggle="tooltip" title="" data-original-title="Google+"><i class="fa fa-google-plus"></i></a>
-                            <a class="social-icon social-dark social-sm si-instagram" href="javascript:void(0)" data-toggle="tooltip" title="" data-original-title="instagram"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 margin-b-30">
-                        <h3>Gallery</h3>
-                        <div class="xs-gallery clearfix">
-                            <a href="assets/template/images/box/img-1.jpg" data-lightbox="gallery">
-                                <img src="assets/template/images/box/img-1.jpg" alt="" class="img-responsive" width="100">
-                            </a>
-                            <a href="assets/template/images/box/img-2.jpg" data-lightbox="gallery">
-                                <img src="assets/template/images/box/img-2.jpg" alt="" class="img-responsive" width="100">
-                            </a>
-                            <a href="assets/template/images/box/img-3.jpg" data-lightbox="gallery">
-                                <img src="assets/template/images/box/img-3.jpg" alt="" class="img-responsive" width="100">
-                            </a>
-                            <a href="assets/template/images/box/img-4.jpg" data-lightbox="gallery">
-                                <img src="assets/template/images/box/img-4.jpg" alt="" class="img-responsive" width="100">
-                            </a>
-                            <a href="assets/template/images/box/img-5.jpg" data-lightbox="gallery">
-                                <img src="assets/template/images/box/img-5.jpg" alt="" class="img-responsive" width="100">
-                            </a>
-                            <a href="assets/template/images/box/img-6.jpg" data-lightbox="gallery">
-                                <img src="assets/template/images/box/img-6.jpg" alt="" class="img-responsive" width="100">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="footer-bottom">
-                    <div class="row">
-                        <div class="col-sm-4 margin-b-20">
-                            <a class="footer-logo" href="#welcome" du-smooth-scroll>BARB SCHWARZ</a>
-                        </div>
-                        <div class="col-sm-4 margin-b-20">
-                            <span class="main-footer-font">&copy; Copyright 2016. <i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-gratipay" aria-hidden="true"></i> by <a href="https://www.linkedin.com/in/duaneleem" target="_blank">Duane Leem</a></span>
-                        </div>
-                        <div class="col-sm-4 margin-b-20">
-                            <ul class="list-inline text-right">
-                                <li><a href="#welcome" du-smooth-scroll>Welcome</a></li>
-                                <li><a href="#about" du-smooth-scroll>About</a></li>
-                                <li><a href="#accomplishments" du-smooth-scroll>Accomplishments</a></li>
-                                <li><a href="#contact" du-smooth-scroll>Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
         <!--back to top-->
         <a href="#" class="scrollToTop"><span class="livicon " data-size="32" data-name="angle-double-up" data-duration="1000"></span></a>
         <!--back to top end-->
+
+
+        <!-- ==========================================================================================
+            Scripts
+        ========================================================================================== -->
         <!-- jQuery plugins-->
         <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="assets/template/js/jquery-migrate.min.js"></script>

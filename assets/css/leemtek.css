@@ -58,8 +58,19 @@
             rgba(0, 0, 0, 0.3)
         ),
         url("../images/wallpaper-parallax-main.png");
-    background-size: auto 100%;
 } /* home-bg */
+
+@media screen and (min-width: 992px) {
+    .home-bg {
+        background-size: auto 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .home-bg {
+        background-size: auto 100%;
+    }
+}
 
 .btn-border {
     border: 2px solid #ffffff;

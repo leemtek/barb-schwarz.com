@@ -2,8 +2,16 @@
     angular.module("barbschwarz")
         .directive("siteHeader", [function() {
             return {
+                restrict: 'A',
                 templateUrl: "assets/js/angular/directives-template/header.html"
             }; // return
-        }]) ; // siteFooter
+        }]) // siteHeader
+
+        .directive("siteFooter", [function () {
+            return {
+                restrict: 'A',
+                templateUrl: "assets/js/angular/directives-template/footer.html"
+            }; // return
+        }]) // siteFooter
     ; // angular.module
 })();
