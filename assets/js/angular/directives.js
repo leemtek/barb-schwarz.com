@@ -1,6 +1,6 @@
 (function() {
     angular.module("barbschwarz")
-        .directive("siteFooter", [function() {
+        .directive("siteHeader", [function() {
             return {
                 templateUrl: "assets/js/angular/directives-template/header.html"
             }; // return

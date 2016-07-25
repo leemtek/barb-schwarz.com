@@ -29,6 +29,7 @@
     "jquery": "~2.1.4",
     "masonry": "~3.3.2",
     "bootstrap-social": "^5.0.0",
-    "angular": "^1.5.7"
+    "angular": "^1.5.7",
+    "angular-scroll": "^1.0.0"
   }
 }
