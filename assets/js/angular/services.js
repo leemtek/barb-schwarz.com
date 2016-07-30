@@ -4,9 +4,9 @@
             var $facSendEmail = [];
 
             $facSendEmail.contactDetails = {
-                "name": "Duane Leem",
-                "email": "Duane@LeemTek.com",
-                "message": "Test email."
+                "name": null,
+                "email": null,
+                "message": null
             }; // contactDetails
 
             $facSendEmail.fnSendSuccessDOM = function() {
