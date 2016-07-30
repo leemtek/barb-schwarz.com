@@ -36,48 +36,70 @@
         </div>
         <div class="col-sm-6 text-center margin-b-30">
             <div class="contact-form">
-                <form role="form" id="feedbackForm">
+                <form role="form" name="formContactBarb" novalidate="">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <!--                                            <label class="control-label" for="name">Name *</label>-->
+                                <!-- <label class="control-label" for="name">Name *</label>-->
                                 <div>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" />
-
+                                    <input type="text" class="form-control"
+                                        ng-class="{ 'has-error': formContactBarb.frmName.$error.required && !formContactBarb.frmName.$pristine }"
+                                        id="frmName"
+                                        placeholder="Enter your name"
+                                        ng-model="contactDetails.name"
+                                        required
+                                    /><!-- /frmName -->
                                 </div>
                                 <span class="help-block" style="display: none;">Please enter your name.</span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <!--                                            <label class="control-label" for="email">Email Address *</label>-->
+                                <!-- <label class="control-label" for="email">Email Address *</label>-->
                                 <div>
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" />
-
+                                    <input type="email" class="form-control"
+                                        id="frmEmail"
+                                        placeholder="Enter your email"
+                                        ng-model="contactDetails.email"
+                                        required
+                                    /><!-- /frmEmail -->
                                 </div>
                                 <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <!--                                    <label class="control-label" for="message">Message *</label>-->
+                        <!-- <label class="control-label" for="message">Message *</label>-->
                         <div>
-                            <textarea rows="5" cols="30" class="form-control" id="message" name="message" placeholder="Enter your message" ></textarea>
-
+                            <textarea id="frmMessage" rows="5" cols="30" class="form-control"
+                                ng-class="{ 'has-error': formContactBarb.frmMessage.$error.required && !formContactBarb.frmMessage.$pristine }"
+                                placeholder="Enter your message"
+                                ng-model="contactDetails.message"
+                                required
+                            ></textarea><!-- /frmMessage -->
                         </div>
                         <span class="help-block" style="display: none;">Please enter a message.</span>
                     </div>
 
                     <div class="form-group" style="margin-top: 10px;">
-                        <!--                                    <label class="control-label" for="captcha_code">Text Within Image *</label>-->
+                        <!-- <label class="control-label" for="captcha_code">Text Within Image *</label>-->
                         <div>
-                            <input type="text" class="form-control" name="captcha_code" id="captcha_code" placeholder="For security, please enter the code displayed in the box." />
-
+                            <div vc-recaptcha key="'6LfYYiYTAAAAAB0amONJ2KNoCEC2SgPQ2EKKoG7d'"></div>
                         </div>
-                        <span class="help-block" style="display: none;">Please enter the code displayed within the image.</span>
                     </div>
-                    <span class="help-block" style="display: none;">Please enter a the security code.</span>
-                    <input type="submit" id="feedbackSubmit" class="btn btn-skin btn-xl" style="display: block; margin-top: 10px;" value="submit">
+                    <div class="pull-left space-top-10">
+                        <span class="help-block" style="display: none;">Please enter a the security code.</span>
+                        <button type="button" class="btn btn-primary text-white"
+                            ng-click="fnClearForm();">
+                            Clear
+                        </button>
+                        <button type="button" class="btn btn-success" id="submit"
+                            ng-click="fnSendForm()"
+                            ng-class="{'disabled': formContactBarb.$invalid}"
+                            ng-disabled="formContactBarb.$invalid">
+                            Send
+                        </button>
+                    </div>
                 </form>
             </div><!--contact form-->
         </div>
