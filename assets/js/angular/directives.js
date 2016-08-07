@@ -14,10 +14,10 @@
             }; // return
         }]) // siteFooter
 
-        .directive("barbsSayings", [function () {
+        .directive("pinterestSquare", [function () {
             return {
                 restrict: 'A',
-                templateUrl: "assets/js/angular/directives-template/barbs-sayings.html"
+                templateUrl: "assets/js/angular/directives-template/pinterest-square.html"
             }; // return
         }]) // siteFooter
     ; // angular.module
