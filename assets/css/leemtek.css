@@ -82,6 +82,8 @@
 /* ============================================================
     Commonly Used
 ============================================================ */
+.section-divider { border-top: 1px solid #ccc; }
+
 .space-top-10 { margin-top: 10px; }
 .space-top-20 { margin-top: 20px; }
 .space-top-40 { margin-top: 40px; }

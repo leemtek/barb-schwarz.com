@@ -77,7 +77,9 @@
             Barb's Sayings
         ================================================================================ -->
         <!-- Cube Portfolio -->
+        <div id="sayings" class="section-divider"></div>
         <section class="container">
+            <div class="space-70"></div>
             <div class="row margin-b-40">
                 <div class="col-sm-12">
                     <div class="cube-portfolio">
@@ -280,23 +282,24 @@
                     </div>
                 </div>
             </div><!-- /row -->
+            <div class="space-70"></div>
         </section><!-- /container -->
 
         <!-- ================================================================================
             Accomplishments
         ================================================================================ -->
-        <section ng-include="'views/home-accomplishments.html'" id="accomplishments"></section>
+        <!-- <section ng-include="'views/home-accomplishments.html'" id="accomplishments"></section> -->
 
         <!-- ================================================================================
             Contact Form
         ================================================================================ -->
-        <section ng-include="'views/home-contact.html'" id="contact" ng-controller="ctrlSendEmail"></section>
+        <div class="section-divider"></div>
+        <section ng-include="'views/home-contact.html'" id="contact" ng-controller="ctrlSendEmail" class="gray-bg"></section>
 
 
         <!-- ==========================================================================================
             Footer
         ========================================================================================== -->
-        <div class="space-40"></div>
         <footer site-footer class="footer-v3"></footer>
 
         <!--back to top-->
