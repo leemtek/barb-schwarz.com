@@ -13,12 +13,5 @@
                 templateUrl: "assets/js/angular/directives-template/footer.html"
             }; // return
         }]) // siteFooter
-
-        .directive("pinterestSquare", [function () {
-            return {
-                restrict: 'A',
-                templateUrl: "assets/js/angular/directives-template/pinterest-square.html"
-            }; // return
-        }]) // siteFooter
     ; // angular.module
 })();
