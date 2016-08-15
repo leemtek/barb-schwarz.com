@@ -83,13 +83,16 @@
         ================================================================================ -->
         <!-- Cube Portfolio -->
         <div id="sayings" class="section-divider"></div>
-        <div class="space-70"></div>
-        <section class="container">
-            <h2 class="text-center">SOME OF BARB SCHWARZ STAGING SAYINGS</h2>
+        <section class="gray-bg">
+            <div class="space-70"></div>
+            <div class="container">
+                <h2 class="text-center">SOME OF BARB SCHWARZ STAGING SAYINGS</h2>
 
-            <div class="space-top-40 text-center">
-                <a data-pin-do="embedBoard" data-pin-board-width="1000" data-pin-scale-height="800" data-pin-scale-width="80" href="https://www.pinterest.com/barbstagedhomes/barb-schwarz-staging-sayings/"></a>
+                <div class="space-top-40 text-center">
+                    <a data-pin-do="embedBoard" data-pin-board-width="1000" data-pin-scale-height="800" data-pin-scale-width="80" href="https://www.pinterest.com/barbstagedhomes/barb-schwarz-staging-sayings/"></a>
+                </div>
             </div>
+            <div class="space-70"></div>
         </section><!-- /container -->
 
         <!-- ================================================================================
@@ -100,15 +103,14 @@
         <!-- ================================================================================
             Thought of the Day
         ================================================================================ -->
-        <div class="space-70"></div>
         <div class="section-divider"></div>
-        <section ng-include="'views/thought.html'" class="gray-bg"></section>
+        <section ng-include="'views/thought.html'"></section>
 
         <!-- ================================================================================
             Contact Form
         ================================================================================ -->
         <div class="section-divider"></div>
-        <section ng-include="'views/home-contact.html'" id="contact" ng-controller="ctrlSendEmail"></section>
+        <section ng-include="'views/home-contact.html'" id="contact"class="gray-bg" ng-controller="ctrlSendEmail"></section>
 
         <!-- ==========================================================================================
             Footer
