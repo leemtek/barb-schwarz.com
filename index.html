@@ -5,6 +5,8 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Stagedhomes, Real estate, Broker, ASP COURSES, Aspm courses, Staging training, Home Staging Training, Staging Courses, Home Staging Courses, Masters Course, MASTERS STAGING COURSES, International Assocation of Home Staging Professionals, Gardens, Gardening, Barb Schwarz Garden, Barb's garden, Staging Gardens, Staging outside, Staging inside, Staging University, Staging education, Home Staging Education, Home Staging University" />
+        <meta name="author" content="Barb Schwarz, Duane Leem" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Barb Schwarz, Creator of Home Staging</title>
 
@@ -60,9 +62,6 @@
         <!-- Pinterest SDK -->
         <script>!function(a,b,c){var d,e,f;d="PIN_"+~~((new Date).getTime()/864e5),a[d]?a[d]+=1:(a[d]=1,a.setTimeout(function(){e=b.getElementsByTagName("SCRIPT")[0],f=b.createElement("SCRIPT"),f.type="text/javascript",f.async=!0,f.src=c.mainUrl+"?"+Math.random(),e.parentNode.insertBefore(f,e)},10))}(window,document,{mainUrl:"//assets.pinterest.com/js/pinit_main.js"});</script>
 
-        <!-- Facebook SDK -->
-        <script>window.fbAsyncInit=function(){FB.init({appId:"1162934623727002",xfbml:!0,version:"v2.7"})},function(a,b,c){var d,e=a.getElementsByTagName(b)[0];a.getElementById(c)||(d=a.createElement(b),d.id=c,d.src="//connect.facebook.net/en_US/sdk.js",e.parentNode.insertBefore(d,e))}(document,"script","facebook-jssdk");</script>
-
         <div id="preloader"></div>
 
         <!-- header -->
@@ -86,7 +85,7 @@
         <div id="sayings" class="section-divider"></div>
         <div class="space-70"></div>
         <section class="container">
-            <h2 class="text-center">BARB'S STAGING SAYINGS</h2>
+            <h2 class="text-center">SOME OF BARB SCHWARZ STAGING SAYINGS</h2>
 
             <div class="space-top-40 text-center">
                 <a data-pin-do="embedBoard" data-pin-board-width="1000" data-pin-scale-height="800" data-pin-scale-width="80" href="https://www.pinterest.com/barbstagedhomes/barb-schwarz-staging-sayings/"></a>
@@ -99,12 +98,17 @@
         <!-- <section ng-include="'views/home-accomplishments.html'" id="accomplishments"></section> -->
 
         <!-- ================================================================================
-            Contact Form
+            Thought of the Day
         ================================================================================ -->
         <div class="space-70"></div>
         <div class="section-divider"></div>
-        <section ng-include="'views/home-contact.html'" id="contact" ng-controller="ctrlSendEmail" class="gray-bg"></section>
+        <section ng-include="'views/thought.html'" class="gray-bg"></section>
 
+        <!-- ================================================================================
+            Contact Form
+        ================================================================================ -->
+        <div class="section-divider"></div>
+        <section ng-include="'views/home-contact.html'" id="contact" ng-controller="ctrlSendEmail"></section>
 
         <!-- ==========================================================================================
             Footer
